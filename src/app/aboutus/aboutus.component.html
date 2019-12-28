@@ -1,0 +1,19 @@
+<div class="container">
+  <table class="table">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>School</th>
+      <th>Class No</th>
+      <th>Action</th>
+    </tr>
+
+    <tr *ngFor="let std of students">
+      <td>{{std.id}}</td>
+      <td>{{std.name}}</td>
+      <td>{{std.school}}</td>
+      <td>{{std.class_no}}</td>
+      <td><button (click)="deleteData()" type="button" class="btn btn-danger">Delete Data</button></td>
+    </tr>
+  </table>
+  </div>
